@@ -1,0 +1,19 @@
+<div class="mt-4">
+    {% if user.is_authenticated %}
+    <a href="{% url 'products' %}" 
+       class="btn button-black-outline btn-prev checkout-button py-2 mr-auto mr-lg-3">
+       &larr;Keep&nbsp;shopping
+    </a>
+    <a href="{% url 'order_history' %}" class="btn button-green checkout-button py-2 mr-auto mr-lg-3">
+        View&nbsp;full&nbsp;order&nbsp;history
+    </a>
+
+    {% else %}
+    <div class="text-right">
+        <a href="{% url 'products' %}" 
+            class="btn button-black-outline btn-prev checkout-button py-2 mr-auto mr-lg-3">
+            Keep&nbsp;shopping&nbsp;&rarr;
+        </a>
+    </div>
+    {% endif %}
+</div>

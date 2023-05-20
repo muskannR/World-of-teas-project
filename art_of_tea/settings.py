@@ -29,7 +29,7 @@ SECRET_KEY = '1fbxz3$trr0kl^tjyo_9%l*v+wo&ic9+xd42u%$r)s**x4!b4r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'world-of-tea.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
